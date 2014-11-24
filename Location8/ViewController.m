@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BeaconEmulator.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonClicked:(id)sender {
+    [[BeaconEmulator sharedInstance] broadcastBeaconWithMajor:100 minor:500];
 }
 
 @end

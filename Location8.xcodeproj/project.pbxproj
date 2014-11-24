@@ -14,6 +14,7 @@
 		036A60651A23BB8C00EB90E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036A60641A23BB8C00EB90E6 /* Images.xcassets */; };
 		036A60681A23BB8C00EB90E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036A60661A23BB8C00EB90E6 /* LaunchScreen.xib */; };
 		036A60741A23BB8C00EB90E6 /* Location8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 036A60731A23BB8C00EB90E6 /* Location8Tests.m */; };
+		036A60821A23C12100EB90E6 /* BeaconEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 036A60811A23C12100EB90E6 /* BeaconEmulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		036A606D1A23BB8C00EB90E6 /* Location8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Location8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		036A60721A23BB8C00EB90E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		036A60731A23BB8C00EB90E6 /* Location8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location8Tests.m; sourceTree = "<group>"; };
+		036A60801A23C12100EB90E6 /* BeaconEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconEmulator.h; sourceTree = "<group>"; };
+		036A60811A23C12100EB90E6 /* BeaconEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconEmulator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +84,10 @@
 		036A60561A23BB8C00EB90E6 /* Location8 */ = {
 			isa = PBXGroup;
 			children = (
-				036A605B1A23BB8C00EB90E6 /* AppDelegate.h */,
-				036A605C1A23BB8C00EB90E6 /* AppDelegate.m */,
 				036A605E1A23BB8C00EB90E6 /* ViewController.h */,
 				036A605F1A23BB8C00EB90E6 /* ViewController.m */,
-				036A60611A23BB8C00EB90E6 /* Main.storyboard */,
-				036A60641A23BB8C00EB90E6 /* Images.xcassets */,
+				036A60801A23C12100EB90E6 /* BeaconEmulator.h */,
+				036A60811A23C12100EB90E6 /* BeaconEmulator.m */,
 				036A60661A23BB8C00EB90E6 /* LaunchScreen.xib */,
 				036A60571A23BB8C00EB90E6 /* Supporting Files */,
 			);
@@ -96,6 +97,10 @@
 		036A60571A23BB8C00EB90E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				036A60611A23BB8C00EB90E6 /* Main.storyboard */,
+				036A60641A23BB8C00EB90E6 /* Images.xcassets */,
+				036A605B1A23BB8C00EB90E6 /* AppDelegate.h */,
+				036A605C1A23BB8C00EB90E6 /* AppDelegate.m */,
 				036A60581A23BB8C00EB90E6 /* Info.plist */,
 				036A60591A23BB8C00EB90E6 /* main.m */,
 			);
@@ -168,6 +173,11 @@
 				TargetAttributes = {
 					036A60531A23BB8C00EB90E6 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					036A606C1A23BB8C00EB90E6 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -220,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				036A60601A23BB8C00EB90E6 /* ViewController.m in Sources */,
+				036A60821A23C12100EB90E6 /* BeaconEmulator.m in Sources */,
 				036A605D1A23BB8C00EB90E6 /* AppDelegate.m in Sources */,
 				036A605A1A23BB8C00EB90E6 /* main.m in Sources */,
 			);
